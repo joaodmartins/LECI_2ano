@@ -1,0 +1,8 @@
+Enunciado:
+Um grafo tem n vértices, numerados de 1 a n. Existe uma aresta entre dois vértices se e só se o máximo divisor comum dos números dos vértices for maior do que 1. Considere que n é igual a 30 (mas o seu programa deve permitir usar outros valores de n).
+
+    Quantos componentes conexos tem o gráfico?
+    Sem repetir vértices num caminho, quantos caminhos existem entre o vértice 2 e o vértice 3?
+    Sem repetir arestas num caminho, quantos caminhos existem entre o vértice 2 e o vértice 3? 
+
+Resolver este problema para n arbitrário (mas não demasiado grande), pode ser tema para o terceiro trabalho prático.

@@ -1,0 +1,32 @@
+AULA01--------------------------------------------------------------------
+
+1) cc -Wall .Werror -O2 hello.c
+	*cc - invoca compilador
+	*Wall - Mostra avisos
+	*Werror - Todos os avisos sao erros
+	*O2 - otimização do programa
+
+2) cc -Wall -Werror -O2 -o hello hello.c
+	*O programa hello.c fica compilado com o nome hello
+	* execute -> ./hello
+
+3)!cc
+	*executa o ultimo comando cc
+
+4)od -c hello.c
+	*invoca todos o conteudo caracter a caracter
+
+5)Ver makefile!
+
+6)make
+	*Executa o makefile
+	*make hello : apenas compila o hello
+
+
+AULA02---------------------------------------------------------------------
+
+1) ver assertions 
+	* #define NDEBUG
+
+
+

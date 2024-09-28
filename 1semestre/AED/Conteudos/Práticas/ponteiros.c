@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	int n = 5;
+	int l = 10;
+	int *p = &n;
+	printf("*p = &n\n");
+	printf("N: %d\n",n);
+	printf("L: %d\n",l);
+	printf("*p = %d\n",*p);
+	printf("n add: %p\n",&n);//Endereco de n
+	printf("l add: %p\n",&l);//Endereco de l
+	printf("p : %p\n\n",p);	//Endereco para o qual p aponta
+
+	*p = 6;
+	printf("*p = 6\n");
+	printf("N: %d\n",n);
+	printf("L: %d\n",l);
+	printf("*p = %d\n",*p);
+	printf("n add: %p\n",&n);//Endereco de n
+	printf("l add: %p\n",&l);//Endereco de l
+	printf("p : %p\n\n",p);	//Endereco para o qual p aponta
+
+	*p = l;
+	printf("*p = l\n");
+	printf("N: %d\n",n);
+	printf("L: %d\n",l);
+	printf("*p = %d\n",*p);
+	printf("n add: %p\n",&n);//Endereco de n
+	printf("l add: %p\n",&l);//Endereco de l
+	printf("p : %p\n\n",p);	//Endereco para o qual p aponta
+
+	p = &l;
+	*p = 15;
+	printf("p = &l && *p = 15\n");
+	printf("N: %d\n",n);
+	printf("L: %d\n",l);
+	printf("*p = %d\n",*p);
+	printf("n add: %p\n",&n);//Endereco de n
+	printf("l add: %p\n",&l);//Endereco de l
+	printf("p : %p\n\n",p);	//Endereco para o qual p aponta
+
+	//*p++ n funciona pois equivale a *(p++), ou seja estamos a incrementar o endereco para o qual p aponta e n o valor do endereco atual de p
+	*p += 1;
+	printf("*p += 1\n");
+	printf("N: %d\n",n);
+	printf("L: %d\n",l);
+	printf("*p: %d\n",*p);
+	printf("n add: %p\n",&n);//Endereco de n
+	printf("l add: %p\n",&l);//Endereco de l
+	printf("%p\n\n",p);	//Endereco para o qual p aponta
+
+	(*p)++;
+	printf("(*p)++\n");
+	printf("N: %d\n",n);
+	printf("L: %d\n",l);
+	printf("*p: %d\n",*p);
+	printf("n add: %p\n",&n);//Endereco de n
+	printf("l add: %p\n",&l);//Endereco de l
+	printf("%p\n\n",p);	//Endereco para o qual p aponta
+
+	p += 1;
+	printf("p += 1\n");
+	printf("N: %d\n",n);
+	printf("L: %d\n",l);
+	printf("*p: %d\n",*p);
+	printf("n add: %p\n",&n);//Endereco de n
+	printf("l add: %p\n",&l);//Endereco de l
+	printf("%p\n\n",p);	//Endereco para o qual p aponta
+}

@@ -1,0 +1,8 @@
+
+*structs
+ functions
+* pointers
+* prints
+* const
+
+

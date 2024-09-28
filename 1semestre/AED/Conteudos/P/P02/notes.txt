@@ -1,0 +1,4 @@
+C++
+* ver cin, cout, cerr (canais de comunicação). Ver pipes
+*cat xpto.txt | tr ' ' '\n' | tr A-Z a-z | sort |uniq -c | sort -nr | head
+*console_codes
