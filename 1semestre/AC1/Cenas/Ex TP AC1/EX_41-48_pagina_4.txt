@@ -1,0 +1,75 @@
+41: a) 	   ble $4,$7,else
+           beq $7,$0,else
+           
+	   sll $13,$7,2
+	   j endif
+     else: 
+	   and $t0,$4,$7
+           or  $t1,$4,$7
+	   xor $13,$t0,$t1
+     endif:
+    
+    b)     bgt $4,3,then
+	   bgt $7,$13,else
+     then:
+	   add $t0,$4,$7
+	   sub $13,$13,$t0
+	   j endif
+     else:
+	   sub $t0,$4,5
+	   add $13,$13,$t0
+     endif:
+
+42: Endereçamento indireto por registo
+
+43: $3- será o registo de destino (ou seja, o valor lido da memória ficará guardado neste registo)
+    $5- o endereço da memória ao qual vamos adicionar um offset para obter o endereço que possui a informação que queremos ler
+    0x24 - o offset que será adicionado ao endereço de memória
+
+44: é usado o formato de codificação I
+    campos: opcode, rs, rt, offset
+    opcode: operação a efetuar (6 bits)
+    rs: registo source, que contém o endereço que possui a informação que pretendemos ler (5 bits)
+    rt: registo no qual vamos armazenar a informação lida da memória (5 bits)
+    offset: valor que vamos adicionar ao valor do registo rs para obter o endreço de memória pretendido (16 bits)
+
+45: a diferença entre sw e sb é que na instrução sw a palavra transferida possui 32 bits, enquanto em sb só são lidos 8 bits (1byte)
+
+46: a diferença entre lb e lbu é que na instrução LBU os 24 bits mais significativos do registo destino serão colocados a 0
+
+47: quando o MIPS a tenta executar verifica que o endereço é inválido e gera uma excepção, terminando aí a
+execução do programa.
+
+48: i=$0 k=$t1
+    
+  a)   li $0,5
+       li $t1,0
+   for:bge $t0,20,endfor
+       
+       addi $t0,$t0,1
+       addi $t1,$t1,5
+       j for
+   endfor:
+
+  b)   li $t0,100
+       li $t1,0
+   for:blt $t0,$0,endfor 
+       
+       addi $t0,$t0,-1
+       addi $t1,$t1,-2
+       j for
+   endfor:
+  c)   li $t1,0
+   for:
+       addiu $t1,$t1,10
+       j for
+
+  d)  li $t1,0
+      li $t0,100
+   do:
+      addi $t1,$t1,5
+      addi $t0,$t0,-1
+   while: bge $t0,0,do
+
+
+    

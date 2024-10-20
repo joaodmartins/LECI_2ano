@@ -1,0 +1,51 @@
+1: CPU, MEMÓRIA, Unidades de I/O.
+
+2: ALU, conjunto de registos e unidade de controlo.
+
+3: Sua função é iterar pelas instruções do programa.
+
+4: Instruction fetch, instruction decode, Operand fetch, execute, store result
+
+5: Permite a tradução de um programa em lenguagem de alto nivel para programa em assembly
+
+6: Permite a tradução de um programa em assembly para código máquina
+
+7: 32 registos internos
+
+8: 32 bits
+
+9: add  $t0, $t1, $t2 (exemplo)
+
+10: SRA shift right aritmético, perserva o sinal do valor
+    SRL shift right logical,  não perserva o sinal do valor
+
+11: a)  0x 4 0 9 A A 5 5 9
+    b)  0x C 0 9 A A 5 5 9
+
+12: a) são funções do sistema operativo que implementam serviços básicos de I/O
+    b) $v0
+    c) $a0 - $a3
+    d) $v0
+
+13: um número único que identifica um registo de memória.
+
+14: a gama total de endereços que o CPU consegue referenciar (depende da dimensão do barramento de endereços)
+
+15: o processador possui uma ALU, um conjunto de registos e uma unidade de controlo
+    os blocos fundamentais da secção de dados(datapath) são os multiplexers, a ALU e os registos internos
+    A unidade de controlo serve para cordenar os elementos do datapath durante a execução de um programa 
+
+16: o conceito "stored_program" implica que na memória possa residir, ao mesmo tempo, informação de natureza variada:´
+    desde código fonte de um programa em C, um compilador, um editor de texto, e o próprio programa resultante da compilação
+
+17: existem 3 formatos de codificação de uma instrução: Formato R,I,J
+    deverá ter um opcode, os registos a utilizar, um offset(para o formato I e J), um campo funct e shamt para o formato R 
+
+18: Instruction Set Architecture
+    	Descreve tudo o que o programador necessita de saber
+	para programar corretamente, em linguagem máquina,
+	um determinado processador
+	• Descreve a funcionalidade, independentemente do h/w
+	que a implementa. Pode assim falar-se de "arquitetura"
+	e "implementação de uma arquitetura" 
+    

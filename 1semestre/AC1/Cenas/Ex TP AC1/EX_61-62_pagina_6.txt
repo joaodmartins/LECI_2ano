@@ -1,0 +1,36 @@
+61: (tou a assumir que os arrays sao de int's logo tou a multiplicar os indices por 4 para somar aos endereços)
+   a)
+     1-
+      addi $t5,$s1,8
+      lw $t5,0($t5)
+      add $t0,$t1,$t2
+      add $t0,$t0,$t5
+
+     2-
+      addi $t5,$s1,8
+      lw $t5,0($t5)
+      sll $t5,$t5,2
+      add $t5,$t5,$s0
+      lw $t5,0($t5)
+      sub $t4,$t1,$t5
+
+   b)
+      1- são precisas 4 instruções e é preciso um registo auxiliar ($t5)
+      2- sao precisas 6 instruções e é preciso um registo auxiliar ($t5)
+   
+   c) A[0] = 0x00000012  ; A[1] = 0x22ED3400  ; A[2] = 0x00000001 ;  B[0] = 0xFFFFFFFE ; B[1] = 0x00005002 ; B[2] = 0x00000002 ;
+
+   d) f = -3 + 2 + 2 = 1
+      j = -3 + 1 = -2
+
+62: 
+    acho que o problema é de não estarmos a usar ponteiros, porque em C , quando chamamos valores em funções, estamos só a alterar cópias desses mesmos valores   
+
+	void troca(int* x, int* y)
+	{
+	int aux;
+	aux = *x;
+	*x = *y;
+	*y = aux;
+	}
+    

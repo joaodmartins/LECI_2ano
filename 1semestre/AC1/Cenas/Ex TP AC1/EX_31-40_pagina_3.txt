@@ -1,0 +1,43 @@
+31: xor $5, $13, $24 = 000000 01101 11000 00101 00000 100110 
+    sub $25, $14, $8 = 000000 01110 01000 11001 00000 100010
+    sll $3,$9,7      = 000000 00000 01001 00011 00111 000000
+    sra $18,$9,8     = 000000 00000 01001 10010 01000 000011
+
+32: ?????
+
+33: 
+    sra  $a0, $a0 , 2
+    add  $a2,$a1,$a0     # z = x >> 2 + y
+    sra  $t0,$t0,5
+    sll  $t1,$t1, 1
+    add  $t2,$t0,$t1
+   ?(is it right?)
+
+34: a) h = i + j;
+    b) h = g + (j + 1);
+
+35: a) h=7 i=3 j=4
+    b) j=5 g=1 h=6
+
+36: set if less than (se o valor no primeiro registo for menor que o valor no segundo registo mete no registo destino o valor 0 ou 1)
+
+37: a) 1
+    b) 1
+
+38: $0
+
+39: a) slt $1,$15,$3   ($1 = 1 if $15 < $3 , $1=0 if $15 >= $3)
+       bne $1,$0,exit
+    b) slt $1,$9,$6   ($1 = 1 if $9 < $6 , $1=0 if $9 >= $6)
+       beq $1,$0,exit
+    c) slt $1,0xA3,$5   ($1 = 1 if 0xA3 < $5 , $1=0 if 0xA3 >= $5)
+       bne $1,$0,exit
+    d) slt $1,$10,0x57  ($1 = 1 if $10 < 0x57 , $1=0 if $10 >= 0x57)
+       beq $1,$0,exit
+    e) slt $1,$19,0x39  ($1 = 1 if $19 < 0x39 , $1=0 if $19 >= 0x39)
+       bne $1,$0,exit
+    f) slt $1,0x16,$23  ($1 = 1 if 0x16 < $23 , $1=0 if 0x16 >= $23)
+       beq $1,$0,exit
+
+40: no ciclo while o branch(para fora do while) vem no inicio e no final temos um jump para o while
+    no ciclo do while o branch(para o do) fica no final 

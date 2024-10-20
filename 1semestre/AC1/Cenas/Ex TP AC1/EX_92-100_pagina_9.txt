@@ -1,0 +1,63 @@
+92: 0b 0010 1011 = 0x002B
+    0xA5 =1010 0101 = -91 = 0xFFA5
+    0b1010 1101 = 0xFFAD
+    0x6B = 0110 1011 = 0X006B
+    0xFA = 1111 1010 = 0xFFFA
+    0X80 = 1000 0000 = 0xFF80
+
+93: se o valor obtido precisa mais bits do que os bits dos operandos da soma
+    A + B > 2^n -1
+
+94: A + B > 2^n-1 -1
+   ou  A + B < -2^n-1  
+
+95: a)i $t0 = 0x7FFFFFFF
+      ii $t0 = 0x80000000
+    b) i nao
+       ii sim
+    c) i $t0 = 0x60000001
+       ii $t0 = 0x00000000
+    d) i nao
+       ii nao
+    e) i  0x7FFFFFFF
+	  0x8FFFFFFE
+       ii 0x80000000
+	  0xC0000000
+    f) ???
+
+96: m+n-1
+
+97: a) mult $6,$7
+       mflo $5
+    
+    b) lui $t0,0X0040
+       ori $t0,$t0,0x0058
+
+    c) div $1,$2
+       mflo $2 
+
+    d) div $6,$7 
+       mfhi $5
+
+    e) slt $1,0x16,$8
+       beq $1,$0,target
+
+    f) slt $1,0x3F,$4
+       bne $1,$0,target
+
+98: $5 = 0xFFFFFFF6
+
+99: div $6,$7 
+
+    $lo = 0xFFFFFFFB
+    $hi = 0xFFFFFFFF
+    
+    para o rem  mfhi $5
+    para o div  mflo $5
+
+100: div $t2,$t3
+     mflo $t0
+
+     div $t2,$t3
+     mfhi $t1
+    

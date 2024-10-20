@@ -1,0 +1,90 @@
+63: lê-se o valor contido no registo $ra
+
+64: ???
+
+65: 32000 *4 = 128000 = 0x0001F400
+    maior endereço = 0x5A18F34C + 0x0001F400
+    menor endereço = 0x5A18F34C - 0x0001F400
+
+66: como na instrução jr usamos o valor do endereço que está num registo podemos passar para qualquer endereço de 32bits
+
+67: [-32768, +32767] ou  [-(2^16 /2), (2^16 /2) -1 ]
+
+68: [0 , 65535]
+
+69: "Porque como o MIPS usa intruções com um valor fixo de 32 bits, não é possivel usar as intruções com uma constante de 32 bits"
+
+70: utilizando a instrução lui (load upper immediate) que coloca a constante nos 16 bits mais significativos do registo destino (o resto dos bits ficam a 0)
+
+71:  (nao sei se  b) e c) estão certas)
+    a) li $6,0x8B47BE0F
+     
+       lui $1, 0x8B47
+       ori $6,$1,0xBE0F
+    
+    b) xori $3,$4,0x12345678
+
+       lui $1, 0x1234
+       ori $1,$1,0x5678
+       xor $3,$4,$1
+
+    c) addi $5,$2,0xF345AB17 
+
+       lui $1, 0xF345
+       ori $1,$1,0xAB17
+       add $5,$2,$1
+
+    d) beq $7,100,L1  (100 = 0x64)
+       
+       lui $1, 0x0000
+       ori $1,$1,0x0064
+       
+       beq $7,$1,L1
+
+    e) blt $3,0x123456,L2 
+       
+       lui $1, 0x0012
+       ori $1,$1,0x3456
+       
+       slt $1,$1,$3   ($1 = 1 if $15 < $3 , $1=0 if $15 >= $3)
+       bne $1,$0,L2
+
+72: são funções (trechos de código que podem ser reutilizados várias vezes)
+
+73: jal
+
+74: porque a instrução j nao troca o valor de $ra para o endereço a seguir ao chamamento da função (nao tenho a certeza desta)
+
+75: na fase fetch lê a instrução e incrementa o valor do PC por 4
+    na fase execute substitui o valor de $ra por PC ($ra = PC) e mete o valor de PC com o valor target_address (4 bits mais significativos do PC + instruction offset * 4)
+
+76: o nome virtual é $ra e o numero do registo é $31
+
+77: salvaguardar o valor do registo $ra e todos os registo $sX utilizados nessas sub-rotinas na stack para evitar perdas de valores importantes 
+
+78: jr (jump on register)
+
+79: Copiar para o PC o registo colocado na instrução
+
+80: a stack é um espaço de armazenamento temporário e o stack pointer serve para manter o endereço do topo da stack e aponta sempre para o último endereço ocupado.
+
+81:Numa operação de PUSH é necessário pré-atualizar o stack pointer
+	antes de uma nova operação de escrita na stack
+   Numa operação de POP é feita uma leitura da stack seguida de
+	atualização do stack pointer
+
+82:A estratégia de crescimento da stack no sentido dos endereços
+   mais baixos é, geralmente, a adotada
+   • Esta estratégia (de crescimento da stack no sentido dos endereços
+   mais baixos) permite uma gestão simplificada da fronteira entre os
+   segmentos de dados e de stack
+
+83: primeiro o registo $sp contém sempre o endereço da última posição ocupada da stack e a stack cresce no sentido decrescente dos endereços de memória.
+     
+    reservamos espaço na stack consoante o número de registos que queremos guardar (ex: addiu $sp,$sp,-16   , para 4 registos)
+    depois guardamos cada um dos registos da seguinte forma (sw $ra,0($sp)    sw $s0,4($sp)  .... )
+
+    no final da sub rotina vamos buscar os valores guardados (lw $ra,0($sp) .... )
+    e por útlimo libertamos o espaço na stack (addiu $sp,$sp,16 )
+
+84: $sp = $29

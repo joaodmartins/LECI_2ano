@@ -1,0 +1,98 @@
+160: hazard de dados entre lw e add ($3)  (2 STALLS)
+     hazard de dados entre add e sw ($4)  (2 STALLS)
+     hazard de dados entre addiu e sltu ($1) (2 STALLS)
+     hazard de dados entre sltu e bne ($5)   (2 STALLS)
+
+161: instruções executadas no ciclo 4*7 = 28
+     instruções executadas fora do ciclo = 4
+     28 + 4 = 32
+     numero de stalls = 4*8=32
+
+     numero de ciclos = F + (n-1) + stalls =
+                      = 5 + 31 + 32 = 68 ciclos
+
+162: hazard de dados entre lw e add ($3)  (1 stall e forwarding de writeback para exe)
+     hazard de dados entre add e sw ($4)  (forwarding de mem para exe)
+     hazard de dados entre addiu e sltu ($1) (forwarding de mem para exe)
+     hazard de dados entre sltu e bne ($5)  (1 stall forwarding de mem para id)
+
+163:
+     instruções executadas no ciclo 4*7 = 28
+     instruções executadas fora do ciclo = 4
+     28 + 4 = 32
+     numero de stalls = 4*2=8
+
+     numero de ciclos = F + (n-1) + stalls =
+                      = 5 + 31 + 8 = 44 ciclos
+
+165: 0x00400030 + -16 = 0X00400020
+
+166: 0X7CABCDEF= 0111 1100 1010 1011 1100 1101 1110 1111
+    
+ $8=0x1600003C = 0001 0110 0000 0000 0000 0000 0011 1100
+   
+        and    = 0001 0100 0000 0000 0000 0000 0010 1100
+
+     
+     0XF9FC3CF3= 1111 1001 1111 1100 0011 1100 1111 0011
+    
+ $8=0x1600003C = 0001 0110 0000 0000 0000 0000 0011 1100
+   
+        and    = 0001 0000 0000 0000 0000 0000 0011 0000
+
+
+     0XDF11347E= 1101 1111 0001 0001 0011 0100 0111 1110
+    
+ $8=0x1600003C = 0001 0110 0000 0000 0000 0000 0011 1100
+   
+        and    = 0001 0110 0000 0000 0000 0000 0011 1100
+
+    logo o ciclo é executado 3 vezes
+
+    beq = 3
+    lw = 5
+    and = 4
+    addi = 4
+    bne = 3
+    total = (3 + 5 + 4 + 4 + 3) * 3 = 19 * 3 = 30 +27 = 57 ciclos de relógio
+
+
+167: o ciclo é executado 3 vezes
+
+     hazzards:
+                 dados: $7 lw e and, 1 stall e forwarding de writeback para exe
+                 dados: $7 bne e and, 1 stall (como and depois fica em writeback e bne está em id nao existe problema)
+ 
+    numero de ciclos = F + (N-1) + stalls = 5 + (6*3 - 1) + 2 * 3 =22 + 6 = 28 ciclos de relógio
+
+168:
+     0 = IF de beq
+     1 = ID de beq e IF lw
+     2 = exe de beq e ID lw e IF and
+     3 = mem de beq e exe lw e ID and e IF addi
+     4 = wb de beq e mem lw e (stall) ID and e IF addi
+     5 = wb lw e EXE and e ID addi e IF bne 
+     6 = mem and e exe addi e (stall) IF bne 
+
+    logo no final do ciclo 6, o resultado na alu será $5 + 4 = 0x100100A8
+
+
+170:
+     forwarding de writeback para MEM
+
+     lw $t0,0($t1)
+     sw $t0,0($t1)
+ 
+     forwarding de writeback para EXE
+
+     add $t0,$t1,$t2
+     xor $0,$0,$0
+     and $t2,$t0,$t1
+
+     forwarding de mem para exe
+     
+
+     forwarding de mem para ID
+     
+    
+

@@ -1,0 +1,42 @@
+19: São 3 classes de instruções
+	1- operações aritméticas e lógicas (Processamento)
+	2- leitura e armazenamento de informação (Transferência)
+	3- controlo do fluxo de execução
+
+20: Register_memory: os operandos podem estar tanto nos registos internos do CPU como na memória
+    Load_store: os operandos das instruções residem apenas em registos internos do CPU de uso geral (nunca na memória)
+    o mips é uma arquitetura Load-store
+
+21: operand fetch :  leitura dos operandos
+    Execute : execução da operação especificada pela instrução
+    Store result : armezenamento do resultado da operação no destino especificado na instrução
+
+22: Address bus
+
+23: barramento de transferência de informação (CPU↔memória, CPU↔Input/Output)
+
+24: 24 - (5 + 3*2) = 13 bits para constantes
+	[-(2^13)/ 2  , (2^13)/2 -1]
+
+25: a) de 0x00000000 a 0xFFFFFFFF   ???
+    b) ????
+
+26: ?????
+
+27: a) 32 bits
+    b) $0 é um registo que nao pode ser escrito e possui sempre o valor 0
+    c) $31
+
+28: a) opcode, rd, rs, rt , shamt, funct
+    B)  opcode:é sempre 0 neste tipo instruções 
+	rd: endereço do registo onde o resultado vai ser armazenado
+	rs: endereço do registo que contém o primeiro operando fonte
+	rt: endereço do registo que contém o segundo operando fonte
+	shamt: shift amount (útil apenas em instruções de deslocamento)
+	funct: código da operação a executar na ALU  
+    c) é sempre 0     
+    d) chama se a instrução nop e nao faz nenhuma instrução
+
+29: o compilador gera um SRL quando a variável é definida como unsigned e gera SRA quando é definida como signed.
+
+30: or $4, ,$0 $15

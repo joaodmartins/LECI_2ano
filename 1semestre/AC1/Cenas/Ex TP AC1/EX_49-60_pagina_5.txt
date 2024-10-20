@@ -1,0 +1,51 @@
+49: 0x23 = 0010 0011
+
+    0x8CA30024
+
+50: 0x28272625  (não tenho 100% certeza )
+
+51: 
+    a) = 000000000000000000000000 1010 0011
+    b) = 111111111111111111111111 1010 0011
+
+52:
+    a) 10 bytes (cada char= 1 byte, mais '\0')
+    b) 3 bytes
+    c) 4x3 = 12 bytes (cada word = 4 bytes)
+    d) 5 words = 5x4 = 20 bytes
+
+53: (não me apeteceu desenhar)
+
+54: L2:0x1001000A
+    L3:0x1001000D
+    L4:0x1001001C
+
+55: 
+    a) la $t0,b
+    b) b + 6*4 (cada int ocupa 4 bytes)
+
+56: instruction offset (numero de instruções que temos de saltar para alcançar a intrução pretendida)
+
+57: multiplicamos o instruction offset por 4 e adicionamos ao valor do PC (program counter) atual.
+
+58: 
+     beq/bne: Formato I
+              opcode (6 bits)
+              rs (5 bits)
+              rt (5 bits)
+              offset (16 bits)
+
+     j:    Formato J
+           opcode (6 bits)
+           28 LSBits do endereço alvo deslocados à direita 2 bits
+
+     jr:   Formato R
+           apenas os campos rs e funct são utilizados
+           rs (5 bits) registo que contem o valor do endereço
+           funct (6 bits) utilizado para chamar o jr
+
+59: usamos os 4 bits mais significativos do program counter e juntamos os 28 bits vindos da instrução (26 bits com 2 shifts a esquerda)
+
+60: a = b[5];  ,  a = *(p + 20);
+
+ 

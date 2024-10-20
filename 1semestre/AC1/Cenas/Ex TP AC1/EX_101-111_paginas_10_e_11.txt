@@ -1,0 +1,59 @@
+101:
+     Dividem-se dividendo por divisor em módulo
+     O quociente tem sinal negativo se os sinais de dividendo e divisor forem diferentes
+     O resto tem o mesmo sinal do dividendo
+
+102:
+     div $t0,$t1	$t0 = -7   $t1 = 2
+     
+     $hi = -1
+     $lo = -3
+
+103:
+     div $t0,$t1	$t0 = 0xFFFFFFF9   $t1 = 0x00000002
+     
+     $hi = 0xFFFFFFFF
+     $lo = 0xFFFFFFFD
+
+104:
+     $5 = -9       $10 = 2
+
+     rem $6, $5, $10
+
+     $6 = -1
+
+105: os 3 a 32bits
+
+107:	a. $a0=0x7FFFFFF1, $a1=0x0000000E;	0	0	0
+	b. $a0=0x7FFFFFF1, $a1=0x0000000F;	0	0	1
+	c. $a0=0xFFFFFFF1, $a1=0xFFFFFFFF;	1	1	0
+	d. $a0=0x80000000, $a1=0x80000000;	1	0	1
+
+108: porque são todas sub-rotinas terminais
+
+109: 6 casas decimais
+
+110: 15 casas decimais
+
+111: 19,1875
+
+	19 (10) = 10011 (2)
+        0.1875 (10) = 0.0011 (2)
+     19,1875 = 10011,0011
+     10011,0011 = 1,00110011 x 2^4
+
+     expoente codificado = 127 + 4 = 131 (10) = 10000011 (2)
+
+0 10000011 00110011000000000000000
+
+
+     precisão dupla
+
+     19,1875
+     
+     expoente codificado = 4 + 1023 = 1027 (10) = 10000000011
+0 10000000011 0011001100000000000000000000000000000000000000000000
+
+    
+     
+     

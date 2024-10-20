@@ -1,0 +1,102 @@
+85:	
+   a) $a0 - $a3 para passar parâmetros para uma sub-rotina
+      $v0 - $v3 para devolver resultados de uma sub-rotina
+
+   b) $t0 - $t9
+
+   c) $s0 - $s7
+
+   d) $s0 - $s7  (porque que a c) e a d) parecem me iguais????)
+
+   e) quando temos uma sub-rotina que chama uma outra sub-rotina que precisa de salvaguardar alguns valores importantes para não correr o risco de os perder na execução da sub-rotina seguinte ( que merda de explicação esta, i tried)
+
+   f) $tn para valores temporários que não sejam precisos mais tarde, $an quando é preciso passar valores a sub-rotinas ou system calls, $vn quando é preciso receber valores de sub-rotinas ou para chamar system calls
+
+86: 
+   a) $ra e todos os $sn utilizados nessa sub-rotina
+   b) nenhum
+
+87: int a = $a0, unsigned char b = $a1, char *c = $a2, int *d = $a3   (será que tou enganado ou isto é mesmo óbvio?)
+
+88: (nao tenho a certeza dos hexadecimais)
+    3 bits: [100, 011] binário
+            [0x4, 0x3] hexadecimal 
+	    [-4,  3] decimal 
+    4 bits: [1000, 0111] binário
+            [0x8, 0x7] hexadecimal 
+	    [-8,  7] decimal
+    5 bits: [10000, 01111] binário
+            [0x10, 0x15] hexadecimal 
+	    [-8,  7] decimal
+    8 bits: [10000000, 01111111] binário
+            [0x80, 0x7F] hexadecimal 
+	    [-128,  127] decimal
+    16 bits:[1000000000000000, 0111111111111111] binário
+            [0x8000, 0x7FFF] hexadecimal 
+	    [-32768,  32767] decimal 
+
+89:
+   
+fun1:
+     addiu $sp,$sp,24
+     sw $ra,$ra,0($sp)
+     sw $s0,$s0,4($sp)
+     sw $s1,$s1,8($sp)
+     sw $s2,$s2,12($sp)
+     sw $s3,$s3,16($sp)
+     sw $s4,$s4,20($sp)
+
+
+     li $s0,0	# j = 0;
+     
+     move $s1,$a1	# $s1 = p = a1
+     move $s2,$a1	# $s2 = $a1
+     move $s3,$a2	# $s3 = $a2
+     move $s4,$a0	# $s4 = $a0 = n
+     
+do:  
+     div $t2,$s0,2
+     mfhi $t2
+if:  bne $t2,0,endif
+     
+     move $a0,$s2
+     lb $a1,0($s3)
+          
+     jal fun2		# fun2(a1++,*a2++)
+     addi $s2,$s2,1
+     addi $s3,$s3,1
+
+endif:
+     addi $s0,$s0,1	# j++;
+while:
+      blt $s0,$s4,do	# ++j <n
+
+      sb '\0',0($s2)	# *a1='\0'
+      
+      move $v0,$s1	# return p
+
+     
+      lw $ra,$ra,0($sp)
+      lw $s0,$s0,4($sp)
+      lw $s1,$s1,8($sp)
+      lw $s2,$s2,12($sp)
+      lw $s3,$s3,16($sp)
+      lw $s4,$s4,20($sp)
+      addiu $sp,$sp,-24
+     
+90:
+      5 = 0000000000000101
+     -3 = 1111111111111101
+   -128 = 1111111110000000
+ -32768 = 1000000000000000
+     31 = 0000000000011111
+     -8 = 1111111111111000
+    256 = 0000000100000000
+    -32 = 1111111111100000
+                    
+91: 0b00101011 = 43
+    0xA5 =1010 0101 = -91
+    0b10101101 = -83
+    0x6B = 0110 1011 = 11 + 32+ 64 = 96 + 11 = 107
+    0xFA = 1111 1010 = -6
+    0X80 = 1000 0000 = -128       

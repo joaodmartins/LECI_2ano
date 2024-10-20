@@ -1,0 +1,22 @@
+120: 2 *10^9 Hz
+     T= 1 / 2*10^9 = 5*10^-10 = 500*10^-12 = 500ps
+     
+     500 = 175 + 45 + tAlu + 175 + 15 + 5 <=> 500 = 415 + tAlu
+     tAlu = 85ps
+
+121: 
+     T = 12 + 4 + 5 + 4 + 1 = 26ns = 26 *10^-9
+     F = (1/26) *10^9 = 1/26 GHz
+
+122:
+     T = 11 + 8 + 1 = 20ns
+     F = 1/20 *10^9 = 0,05 *10^9 = 50 *10^6 = 50 MHz
+     
+123: 
+     T = 12 + 3 + 6 + 1  = 22ns
+     F = (1/22) * 10^9 Hz
+
+124: as instruçoes são todas feitas num ciclo de relogio e a unidade de controlo é puramente combinatória
+
+125: PC + 4
+

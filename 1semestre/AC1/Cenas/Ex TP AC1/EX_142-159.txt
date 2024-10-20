@@ -1,0 +1,69 @@
+142: jump na fase 3
+      j 0x295FFFE
+
+
+143:  0x00400030 + (x*4) = 0x00400044
+        x*4 = 0x00000014 
+        x*4 = 20 (10) <=> x = 5 (10) = 0x0000
+
+      0001 0000 1010 0110 0000 0000 0000 0101
+      0x10A60005
+
+144: jr e jal e lb
+
+145: combinatória
+     entrada: opcode da instrução
+     saidas: ALUSrc, RegDst, ALUOp, MemRead, MemWrite, MemtoReg, RegWrite, Jump, Branch
+
+146: o elemento operativo que demora mais tempo 
+
+147:
+      a) F = 0,1 * 10^9 Hz     (tempo máx é 10ns)
+      b) F = 1/8 * 10^9 Hz     (tempo máx é 8ns)
+      c) F = 1/12 * 10^9 Hz     (tempo máx é 12ns)
+
+148: hazards estruturais, dados, controlo
+
+149: forwarding
+
+150: quando temos de utilizador o valor de um registo que está a ser atualizado na instrução anterior
+     aka depêndencia de dados entre duas instruções
+
+151: delayed branch, esta abordagem consiste em executar sempre a instrução que se segue ao branch, independentemente da condição ser verdadeira ou falsa
+     esta técnica é implementada com a  ajuda do compilador/assembler:
+         organiza as instruções do programa por forma a trocar a ordem do branch com uma instrução anterior
+
+152: stalling, consiste em introduzir instruções nop no pipeline para atrasar as novas instruções enquanto a mais antiga acaba de ser executada
+
+153: Ncycles = F + (N-1) = 5 + (6-1) = 10 ciclos
+
+154: por os ciclos do single cycle são bem mais longos, porque estão sujeitos ao atraso da instrução mais lenta (o LW),
+     enquanto os ciclos do pipeline dependem apenas do atraso do elemento operativo mais lento
+
+155: 4 + 5 + 4 + 4 + 4 + 4 = 25 ciclos
+
+156: a) forwarding de mem para id (add está em MEM e beq está em ID), dependencia $t0
+     b) forwarding de mem para exe (quando sub chegar a MEM e addi tiver em EXE)
+     c) erro 
+     d) dependencia de $t3,  forwarding de writeback para exe (lw em writeback para sw em exe)
+        dependencia de $t0, forwarding de mem para exe (quando xori chegar a MEM e sw tiver em EXE)
+
+157: tem a função de comparar o registo de destino da instrução mais a frente no pipeline com os registos utilizados para a instrução mais atrás no pipeline e verificar se usam os mesmos registos
+
+158: 
+     a)
+     hazard de dados entre ori e beq, nao pode ser resolvido por apenas forwarding (acho eu ???)
+     hazard de controlo em beq
+     
+     b) 2 stalls em ori para impedir o beq de continuar sem o valor de $t2 certo
+
+     c) assim só teriamos de utilizar um stall em ori porque depois podiamos usar forwarding de ori em MEM para beq em ID
+
+159: 
+     hazard de dados entre lw e add ($3)
+     hazard de dados entre add e sw ($4)
+     hazard de dados entre addiu e sltu ($1)
+     hazard de dados entre sltu e bne ($5)
+     hazard de controlo em bne
+
+    
