@@ -18,7 +18,7 @@ str: 	.space 21
 	
 main: 
 	li $v0, read_string
-	la $a0, str
+	la $a0, str 
 	li $a1, SIZE
 	syscall
 	
