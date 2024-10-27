@@ -16,10 +16,9 @@ str: 	.space 21
 	.text
 	.globl main
 	
-main: 
-	li $v0, read_string
-	la $a0, str 
+main: 	la $a0, str 
 	li $a1, SIZE
+	li $v0, read_string
 	syscall
 	
 	li $t0, 0

@@ -38,7 +38,7 @@ for:
     	li $v0, print_char
     	li $a0, ' '             # Imprime espaço
     	syscall
-
+    	
 nospace:
     	# Isola o bit mais significativo (31)
     	li $t3, 0x80000000
