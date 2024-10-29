@@ -42,6 +42,8 @@ dowhile:
 	
 	bge $t5, SIZE, enddw
 	
+if: 	
+	
 	
 
 	
