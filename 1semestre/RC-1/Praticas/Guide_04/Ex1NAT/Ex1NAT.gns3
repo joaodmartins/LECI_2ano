@@ -201,8 +201,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": 0,
-                            "y": 6
+                            "x": -15,
+                            "y": 57
                         },
                         "node_id": "5595f18c-ce1e-4f60-bae6-8c2fd3117d87",
                         "port_number": 0
@@ -490,7 +490,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5000,
+                "console": 5010,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
