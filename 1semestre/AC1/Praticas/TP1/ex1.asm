@@ -48,7 +48,7 @@ main:	la $a0, str1
 	
 if1: 	bne $t4, '^', if2
 	
-	xor $t4, $t0, $t1
+	xor $t2, $t0, $t1
 	
 	j print
 	
@@ -56,7 +56,7 @@ if2: 	bne $t4, '<', if3
 	
 	bne $t4, $t5, if3
 	
-	sllv $t4, $t0, $t1
+	sllv $t2, $t0, $t1
 	
 	j print
 	
@@ -75,7 +75,7 @@ print: 	li $v0, print_string
 	syscall
 	
 	li $v0, print_int10
-	move $a0, $t4
+	move $a0, $t2
 	syscall
 	
 final: 	jr $ra

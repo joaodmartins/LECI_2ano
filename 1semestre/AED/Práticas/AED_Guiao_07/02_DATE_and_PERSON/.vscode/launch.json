@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Utilizador/Desktop/LECI_2ano/1semestre/AED/Práticas/AED_Guiao_07/02_DATE_and_PERSON",
+      "program": "c:/Users/Utilizador/Desktop/LECI_2ano/1semestre/AED/Práticas/AED_Guiao_07/02_DATE_and_PERSON/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
