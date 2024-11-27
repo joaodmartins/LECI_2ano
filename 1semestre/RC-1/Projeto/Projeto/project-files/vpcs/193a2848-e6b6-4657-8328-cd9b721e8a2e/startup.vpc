@@ -1,9 +1,3 @@
-# This the configuration for February
-#
-# Uncomment the following line to enable DHCP
-# dhcp
-# or the line below to manually setup an IP address and subnet mask
-# ip 192.168.1.1 255.0.0.0
-#
-
 set pcname February
+ip 203.182.102.226 203.182.102.225 28
+ip 2002:a202:bc84:200::3/64
