@@ -1,2 +1,3 @@
 set pcname August
 ip 2002:a202:bc84:100::3/64
+ip auto

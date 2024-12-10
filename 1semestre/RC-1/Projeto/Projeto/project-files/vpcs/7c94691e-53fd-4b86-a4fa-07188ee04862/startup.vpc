@@ -1,3 +1,4 @@
 set pcname September
 ip 203.182.102.130 203.182.102.129 26
 ip 2002:a202:bc84:100::4/64
+ip auto

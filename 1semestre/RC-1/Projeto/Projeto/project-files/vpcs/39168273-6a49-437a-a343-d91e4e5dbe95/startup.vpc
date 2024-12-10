@@ -1,3 +1,4 @@
 set pcname December
 ip 203.182.102.242 203.182.102.241 29
 ip 2002:a202:bc84:101::4/64
+ip auto
