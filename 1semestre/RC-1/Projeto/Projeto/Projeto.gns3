@@ -1386,7 +1386,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5016,
+                "console": 5026,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],

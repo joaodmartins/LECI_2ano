@@ -1,0 +1,22 @@
+Dec 12 15:04:49.898 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 12 15:04:49.899 HYPERVISOR: Started on IP = localhost, TCP port = 51033.
+Dec 12 15:04:50.210 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 12 15:04:50.211 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Desktop\LECI_2ano\1semestre\RC-1\Projeto\Projeto\project-files\dynamips 
+Dec 12 15:04:50.214 GENERAL: working_dir=C:\Users\Utilizador\Desktop\LECI_2ano\1semestre\RC-1\Projeto\Projeto\project-files\dynamips
+Dec 12 15:04:50.214 HYPERVISOR: exec_cmd: ethsw create SW6 
+Dec 12 15:04:53.333 HYPERVISOR: exec_cmd: nio create_udp udp-da18e82b-0f5d-44e5-bbf3-92bb2b3e6803 20021 127.0.0.1 20020 
+Dec 12 15:04:53.342 HYPERVISOR: exec_cmd: ethsw add_nio SW6 udp-da18e82b-0f5d-44e5-bbf3-92bb2b3e6803 
+Dec 12 15:04:53.372 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW6 udp-da18e82b-0f5d-44e5-bbf3-92bb2b3e6803 4 
+Dec 12 15:04:53.403 HYPERVISOR: exec_cmd: nio create_udp udp-e69ee77b-5d10-4948-b427-ebab0605338f 20023 127.0.0.1 20022 
+Dec 12 15:04:53.404 HYPERVISOR: exec_cmd: ethsw add_nio SW6 udp-e69ee77b-5d10-4948-b427-ebab0605338f 
+Dec 12 15:04:53.435 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW6 udp-e69ee77b-5d10-4948-b427-ebab0605338f 2 
+Dec 12 15:04:53.466 HYPERVISOR: exec_cmd: nio create_udp udp-6a6e3fc4-672d-4e61-ac1b-5e77462ee233 20025 127.0.0.1 20024 
+Dec 12 15:04:53.467 HYPERVISOR: exec_cmd: ethsw add_nio SW6 udp-6a6e3fc4-672d-4e61-ac1b-5e77462ee233 
+Dec 12 15:04:53.499 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW6 udp-6a6e3fc4-672d-4e61-ac1b-5e77462ee233 2 
+Dec 12 15:04:54.237 HYPERVISOR: exec_cmd: nio create_udp udp-1add200c-6acf-401c-aea8-ad5cd532e37a 20045 127.0.0.1 20044 
+Dec 12 15:04:54.237 HYPERVISOR: exec_cmd: ethsw add_nio SW6 udp-1add200c-6acf-401c-aea8-ad5cd532e37a 
+Dec 12 15:04:54.249 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW6 udp-1add200c-6acf-401c-aea8-ad5cd532e37a 1 
+Dec 12 15:45:01.683 HYPERVISOR: exec_cmd: ethsw delete SW6 
+Dec 12 15:45:01.753 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 12 15:45:02.076 HYPERVISOR: Stopped.
+Dec 12 15:45:02.076 GENERAL: reset done.
