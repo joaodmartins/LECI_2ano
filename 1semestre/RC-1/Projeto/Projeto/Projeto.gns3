@@ -436,70 +436,6 @@
             },
             {
                 "filters": {},
-                "link_id": "5afbc155-343d-42c2-ad83-52e2b22e4083",
-                "link_style": {},
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "g0/0",
-                            "x": 72,
-                            "y": 22
-                        },
-                        "node_id": "5be99eeb-0d2c-4125-a1c4-916490862288",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "Ethernet",
-                            "x": 40,
-                            "y": 69
-                        },
-                        "node_id": "3efa2258-7822-4d56-95db-5b80cb565ef6",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "327a19cb-95ef-47df-a049-d9ce43393a1d",
-                "link_style": {},
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e2",
-                            "x": 6,
-                            "y": 43
-                        },
-                        "node_id": "9df95d70-5bfc-445d-9968-d3f3d98ad271",
-                        "port_number": 2
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 68,
-                            "y": -5
-                        },
-                        "node_id": "b1a4cd5a-7cab-4fe8-929a-62660f75d2ec",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
                 "link_id": "1211c189-9269-4afa-8f00-8fa412e5a460",
                 "link_style": {},
                 "nodes": [
@@ -589,6 +525,70 @@
                             "y": 55
                         },
                         "node_id": "3b4a353e-aa81-401b-97af-75c4c10ed839",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "eeacc974-cf2d-4ebd-be82-91b2ff18199a",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": 68,
+                            "y": -5
+                        },
+                        "node_id": "b1a4cd5a-7cab-4fe8-929a-62660f75d2ec",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e2",
+                            "x": 7,
+                            "y": 44
+                        },
+                        "node_id": "9df95d70-5bfc-445d-9968-d3f3d98ad271",
+                        "port_number": 2
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "20c6f72b-ef1e-49bd-a631-6ea09da8bab5",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "g0/0",
+                            "x": 72,
+                            "y": 22
+                        },
+                        "node_id": "5be99eeb-0d2c-4125-a1c4-916490862288",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "Ethernet",
+                            "x": 41,
+                            "y": 72
+                        },
+                        "node_id": "3efa2258-7822-4d56-95db-5b80cb565ef6",
                         "port_number": 0
                     }
                 ],
@@ -1251,14 +1251,15 @@
                             "ethertype": "",
                             "name": "Ethernet6",
                             "port_number": 6,
-                            "type": "access",
+                            "type": "dot1q",
                             "vlan": 8
                         },
                         {
+                            "ethertype": "",
                             "name": "Ethernet7",
                             "port_number": 7,
-                            "type": "access",
-                            "vlan": 1
+                            "type": "dot1q",
+                            "vlan": 12
                         }
                     ]
                 },
@@ -1380,8 +1381,8 @@
                 "symbol": ":/symbols/vbox_guest.svg",
                 "template_id": "af43b7a1-15e3-4070-a593-d85d6a1de0b1",
                 "width": 65,
-                "x": -225,
-                "y": 235,
+                "x": -226,
+                "y": 239,
                 "z": 1
             },
             {

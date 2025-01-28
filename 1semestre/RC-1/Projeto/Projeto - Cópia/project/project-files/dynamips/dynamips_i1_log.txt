@@ -1,0 +1,18 @@
+Dec 19 16:30:55.711 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 19 16:30:55.711 HYPERVISOR: Started on IP = localhost, TCP port = 49305.
+Dec 19 16:30:55.991 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 19 16:30:55.992 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Desktop\LECI_2ano\1semestre\RC-1\Projeto\Projeto - Cópia\project-files\dynamips 
+Dec 19 16:30:55.996 GENERAL: working_dir=C:\Users\Utilizador\Desktop\LECI_2ano\1semestre\RC-1\Projeto\Projeto - Cópia\project-files\dynamips
+Dec 19 16:30:55.996 HYPERVISOR: exec_cmd: ethsw create SW6 
+Dec 19 16:31:00.226 HYPERVISOR: exec_cmd: nio create_udp udp-f8118377-a7e1-4840-80f8-98dbafbac3fe 20021 127.0.0.1 20020 
+Dec 19 16:31:00.235 HYPERVISOR: exec_cmd: ethsw add_nio SW6 udp-f8118377-a7e1-4840-80f8-98dbafbac3fe 
+Dec 19 16:31:00.251 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW6 udp-f8118377-a7e1-4840-80f8-98dbafbac3fe 4 
+Dec 19 16:31:00.295 HYPERVISOR: exec_cmd: nio create_udp udp-f9f75c96-23c8-4abc-9d8d-fd4204982f70 20023 127.0.0.1 20022 
+Dec 19 16:31:00.295 HYPERVISOR: exec_cmd: ethsw add_nio SW6 udp-f9f75c96-23c8-4abc-9d8d-fd4204982f70 
+Dec 19 16:31:00.314 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW6 udp-f9f75c96-23c8-4abc-9d8d-fd4204982f70 2 
+Dec 19 16:31:00.353 HYPERVISOR: exec_cmd: nio create_udp udp-07a4d069-4d64-457f-86e7-be1df9a445ba 20025 127.0.0.1 20024 
+Dec 19 16:31:00.353 HYPERVISOR: exec_cmd: ethsw add_nio SW6 udp-07a4d069-4d64-457f-86e7-be1df9a445ba 
+Dec 19 16:31:00.376 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW6 udp-07a4d069-4d64-457f-86e7-be1df9a445ba 2 
+Dec 19 16:31:00.820 HYPERVISOR: exec_cmd: nio create_udp udp-ea2a8f28-efef-4790-ab4e-07243145fd09 20039 127.0.0.1 20038 
+Dec 19 16:31:00.820 HYPERVISOR: exec_cmd: ethsw add_nio SW6 udp-ea2a8f28-efef-4790-ab4e-07243145fd09 
+Dec 19 16:31:00.841 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW6 udp-ea2a8f28-efef-4790-ab4e-07243145fd09 1 

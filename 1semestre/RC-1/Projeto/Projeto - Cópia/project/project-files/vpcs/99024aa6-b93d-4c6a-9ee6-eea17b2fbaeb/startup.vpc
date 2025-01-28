@@ -1,0 +1,4 @@
+set pcname Taurus
+ip 203.4.11.2 203.4.11.1 27
+ip 2002:a041:bc19:100::3/64
+ip auto

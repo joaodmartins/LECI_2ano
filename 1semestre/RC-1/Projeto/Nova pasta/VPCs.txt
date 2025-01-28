@@ -1,0 +1,45 @@
+set pcname January
+ip 172.24.22.2 172.24.22.1 24
+ip 2002:a202:bc84:200::2/64
+
+set pcname February
+dhcp
+
+set pcname March
+ip 203.182.102.226 203.182.102.225 28
+ip 2002:a202:bc84:200::4/64
+
+set pcname April
+ip 172.24.23.2 172.24.23.1 25
+ip 2002:a202:bc84:201::2/64
+
+set pcname May
+dhcp
+
+set pcname June
+ip 203.182.102.194 203.182.102.193 27
+ip 2002:a202:bc84:201::3/64
+
+set pcname July
+ip 172.24.23.130 172.24.23.129 26
+ip 2002:a202:bc84:100::2/64
+
+set pcname August
+dhcp
+
+set pcname September
+ip 203.182.102.130 203.182.102.129 26
+ip 2002:a202:bc84:100::4/64
+
+set pcname October
+ip 172.24.23.194 172.24.23.193 27
+ip 2002:a202:bc84:101::2/64
+
+set pcname November
+dhcp
+
+set pcname December
+ip 203.182.102.242 203.182.102.241 29
+ip 2002:a202:bc84:101::4/64
+
+

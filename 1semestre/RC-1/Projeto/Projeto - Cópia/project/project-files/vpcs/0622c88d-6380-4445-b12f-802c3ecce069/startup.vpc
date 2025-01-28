@@ -1,0 +1,4 @@
+set pcname October
+ip 172.24.23.194 172.24.23.193 27
+ip 2002:a202:bc84:101::2/64
+ip auto

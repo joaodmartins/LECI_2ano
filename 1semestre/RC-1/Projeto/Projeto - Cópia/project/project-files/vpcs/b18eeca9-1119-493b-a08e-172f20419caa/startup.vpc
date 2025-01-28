@@ -1,0 +1,4 @@
+set pcname Virgo
+ip 172.24.93.2 172.24.93.1 26
+ip 2002:a041:bc19:111::2/64
+ip auto

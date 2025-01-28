@@ -1,0 +1,4 @@
+set pcname Gemini
+ip 172.24.93.66 172.24.93.65 26
+ip 2002:a041:bc19:100::4/64
+ip auto

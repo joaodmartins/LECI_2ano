@@ -1,0 +1,21 @@
+Dec 19 16:30:56.048 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 19 16:30:56.049 HYPERVISOR: Started on IP = localhost, TCP port = 49308.
+Dec 19 16:30:56.559 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 19 16:30:56.566 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Desktop\LECI_2ano\1semestre\RC-1\Projeto\Projeto - Cópia\project-files\dynamips 
+Dec 19 16:30:56.566 GENERAL: working_dir=C:\Users\Utilizador\Desktop\LECI_2ano\1semestre\RC-1\Projeto\Projeto - Cópia\project-files\dynamips
+Dec 19 16:30:56.567 HYPERVISOR: exec_cmd: ethsw create SW7 
+Dec 19 16:31:00.028 HYPERVISOR: exec_cmd: nio create_udp udp-1684e096-a14d-44e1-b9bf-5560e992777d 20015 127.0.0.1 20014 
+Dec 19 16:31:00.037 HYPERVISOR: exec_cmd: ethsw add_nio SW7 udp-1684e096-a14d-44e1-b9bf-5560e992777d 
+Dec 19 16:31:00.065 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW7 udp-1684e096-a14d-44e1-b9bf-5560e992777d 4 
+Dec 19 16:31:00.100 HYPERVISOR: exec_cmd: nio create_udp udp-071fbc23-2749-46be-b9e5-25dc8ecfbc7c 20017 127.0.0.1 20016 
+Dec 19 16:31:00.101 HYPERVISOR: exec_cmd: ethsw add_nio SW7 udp-071fbc23-2749-46be-b9e5-25dc8ecfbc7c 
+Dec 19 16:31:00.127 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW7 udp-071fbc23-2749-46be-b9e5-25dc8ecfbc7c 2 
+Dec 19 16:31:00.166 HYPERVISOR: exec_cmd: nio create_udp udp-6fafd82a-0594-41ae-9ecd-00171e84a707 20019 127.0.0.1 20018 
+Dec 19 16:31:00.166 HYPERVISOR: exec_cmd: ethsw add_nio SW7 udp-6fafd82a-0594-41ae-9ecd-00171e84a707 
+Dec 19 16:31:00.191 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW7 udp-6fafd82a-0594-41ae-9ecd-00171e84a707 4 
+Dec 19 16:31:00.774 HYPERVISOR: exec_cmd: nio create_udp udp-00a0cf1f-c586-4428-a338-8b88846527be 20035 127.0.0.1 20034 
+Dec 19 16:31:00.774 HYPERVISOR: exec_cmd: ethsw add_nio SW7 udp-00a0cf1f-c586-4428-a338-8b88846527be 
+Dec 19 16:31:00.780 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW7 udp-00a0cf1f-c586-4428-a338-8b88846527be 1 
+Dec 19 16:31:00.910 HYPERVISOR: exec_cmd: nio create_udp udp-6875c3ee-8f79-49e6-ae64-bc1b17b66437 20043 127.0.0.1 20042 
+Dec 19 16:31:00.910 HYPERVISOR: exec_cmd: ethsw add_nio SW7 udp-6875c3ee-8f79-49e6-ae64-bc1b17b66437 
+Dec 19 16:31:00.938 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW7 udp-6875c3ee-8f79-49e6-ae64-bc1b17b66437 12 
