@@ -1,0 +1,59 @@
+Feb 14 09:04:42.301 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 14 09:04:42.301 HYPERVISOR: Started on IP = localhost, TCP port = 49983.
+Feb 14 09:04:42.303 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 14 09:04:42.304 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide1.1\project-files\dynamips 
+Feb 14 09:04:42.304 GENERAL: working_dir=C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide1.1\project-files\dynamips
+Feb 14 09:04:42.304 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide1.1\project-files\dynamips\b64f176f-25a3-4ec2-bb7b-c2d8bc7169bf 
+Feb 14 09:04:42.312 GENERAL: working_dir=C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide1.1\project-files\dynamips\b64f176f-25a3-4ec2-bb7b-c2d8bc7169bf
+Feb 14 09:04:42.312 HYPERVISOR: exec_cmd: vm create ESW3 3 c3725 
+Feb 14 09:04:42.314 VM: VM ESW3 created.
+Feb 14 09:04:42.315 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW3 5002 
+Feb 14 09:04:42.315 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW3 
+Feb 14 09:04:42.316 HYPERVISOR: exec_cmd: vm set_ios ESW3 C:/Users/Utilizador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 14 09:04:42.317 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 14 09:04:42.317 HYPERVISOR: exec_cmd: vm set_idle_pc ESW3 0x602467a4 
+Feb 14 09:04:42.318 HYPERVISOR: exec_cmd: vm set_exec_area ESW3 64 
+Feb 14 09:04:42.318 HYPERVISOR: exec_cmd: vm set_nvram ESW3 256 
+Feb 14 09:04:42.319 HYPERVISOR: exec_cmd: vm set_disk0 ESW3 1 
+Feb 14 09:04:42.320 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 14 09:04:42.320 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 1 0 NM-16ESW 
+Feb 14 09:04:42.355 HYPERVISOR: exec_cmd: vm set_ios ESW3 C:/Users/Utilizador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 14 09:04:44.882 HYPERVISOR: exec_cmd: vm set_ios ESW3 C:/Users/Utilizador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 14 09:05:18.025 HYPERVISOR: exec_cmd: vm set_ios ESW3 C:/Users/Utilizador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 14 09:05:18.026 HYPERVISOR: exec_cmd: vm rename ESW3 DIST3 
+Feb 14 09:05:18.088 HYPERVISOR: exec_cmd: vm set_ios DIST3 C:/Users/Utilizador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 14 09:06:02.367 HYPERVISOR: exec_cmd: vm set_ios DIST3 C:/Users/Utilizador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 14 09:06:14.732 HYPERVISOR: exec_cmd: vm set_ios DIST3 C:/Users/Utilizador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 14 09:06:20.452 HYPERVISOR: exec_cmd: vm set_ios DIST3 C:/Users/Utilizador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 14 09:07:16.016 HYPERVISOR: exec_cmd: nio create_udp udp-f290ff65-6dfb-4f66-a350-6dd5c9d2a5fe 20026 127.0.0.1 20027 
+Feb 14 09:07:16.283 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DIST3 1 15 udp-f290ff65-6dfb-4f66-a350-6dd5c9d2a5fe 
+Feb 14 09:07:16.285 HYPERVISOR: exec_cmd: vm get_status DIST3 
+Feb 14 09:07:23.706 HYPERVISOR: exec_cmd: nio create_udp udp-e18baa88-9542-4aed-9f95-6bdd72ee8cda 20032 127.0.0.1 20033 
+Feb 14 09:07:23.716 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DIST3 1 0 udp-e18baa88-9542-4aed-9f95-6bdd72ee8cda 
+Feb 14 09:07:23.717 HYPERVISOR: exec_cmd: vm get_status DIST3 
+Feb 14 09:07:33.300 HYPERVISOR: exec_cmd: nio create_udp udp-b5a1722c-1acb-4e08-bebe-3d05829c379a 20036 127.0.0.1 20037 
+Feb 14 09:07:33.304 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DIST3 1 1 udp-b5a1722c-1acb-4e08-bebe-3d05829c379a 
+Feb 14 09:07:33.304 HYPERVISOR: exec_cmd: vm get_status DIST3 
+Feb 14 09:08:12.221 HYPERVISOR: exec_cmd: vm set_ghost_status DIST3 2 
+Feb 14 09:08:12.229 HYPERVISOR: exec_cmd: vm set_ghost_file DIST3 C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide1.1\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.image-128.ghost 
+Feb 14 09:08:12.229 HYPERVISOR: exec_cmd: vm get_status DIST3 
+Feb 14 09:08:12.238 HYPERVISOR: exec_cmd: vm set_config DIST3 configs\i3_startup-config.cfg 
+Feb 14 09:08:12.239 HYPERVISOR: exec_cmd: vm start DIST3 
+Feb 14 09:36:13.244 HYPERVISOR: exec_cmd: vm extract_config DIST3 
+Feb 14 09:36:13.269 HYPERVISOR: exec_cmd: vm extract_config DIST3 
+Feb 14 09:38:13.311 HYPERVISOR: exec_cmd: vm extract_config DIST3 
+Feb 14 09:38:13.325 HYPERVISOR: exec_cmd: vm extract_config DIST3 
+Feb 14 09:38:21.430 HYPERVISOR: exec_cmd: nio bind_filter udp-f290ff65-6dfb-4f66-a350-6dd5c9d2a5fe 2 capture 
+Feb 14 09:38:21.430 HYPERVISOR: exec_cmd: nio setup_filter udp-f290ff65-6dfb-4f66-a350-6dd5c9d2a5fe 2 en10mb C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide1.1\project-files\captures\DIST3_FastEthernet115_to_CORE1_FastEthernet12.pcap 
+Feb 14 09:59:31.073 HYPERVISOR: exec_cmd: vm set_ios DIST3 C:/Users/Utilizador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 14 09:59:39.252 HYPERVISOR: exec_cmd: vm set_ios DIST3 C:/Users/Utilizador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 14 10:18:55.886 HYPERVISOR: exec_cmd: vm get_status DIST3 
+Feb 14 10:18:55.886 HYPERVISOR: exec_cmd: vm stop DIST3 
+Feb 14 10:18:56.071 VM: VM DIST3 shutdown.
+Feb 14 10:18:56.076 HYPERVISOR: exec_cmd: vm extract_config DIST3 
+Feb 14 10:18:56.088 HYPERVISOR: exec_cmd: nio unbind_filter udp-f290ff65-6dfb-4f66-a350-6dd5c9d2a5fe 2 
+Feb 14 10:18:57.565 HYPERVISOR: exec_cmd: vm set_ghost_status DIST3 2 
+Feb 14 10:18:57.567 HYPERVISOR: exec_cmd: vm set_ghost_file DIST3 C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide1.1\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.image-128.ghost 
+Feb 14 10:18:57.567 HYPERVISOR: exec_cmd: vm get_status DIST3 
+Feb 14 10:18:57.613 HYPERVISOR: exec_cmd: vm set_config DIST3 configs\i3_startup-config.cfg 
+Feb 14 10:18:57.614 HYPERVISOR: exec_cmd: vm start DIST3 
