@@ -1,0 +1,12 @@
+GAS LISTING prog2adif.s 			page 1
+
+
+DEFINED SYMBOLS
+         prog2adif.s:1      *ABS*:0000000000000002 GET_CHAR
+         prog2adif.s:2      *ABS*:0000000000000003 PUT_CHAR
+         prog2adif.s:3      *ABS*:0000000000000006 PRINT_INT
+         prog2adif.s:9      .text:0000000000000000 main
+         prog2adif.s:11     .text:0000000000000004 dow
+         prog2adif.s:27     .text:0000000000000038 enddw
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,21 @@
+GAS LISTING prog1a.s 			page 1
+
+
+DEFINED SYMBOLS
+            prog1a.s:1      *ABS*:0000000000000001 UP
+            prog1a.s:2      *ABS*:0000000000000000 DOWN
+            prog1a.s:3      *ABS*:0000000000000003 PUT_CHAR
+            prog1a.s:4      *ABS*:0000000000000006 PRINT_INT
+            prog1a.s:5      *ABS*:0000000000000001 INKEY
+            prog1a.s:11     .text:0000000000000000 main
+            prog1a.s:14     .text:0000000000000008 dow
+            prog1a.s:67     .text:00000000000000c0 wait
+            prog1a.s:43     .text:000000000000006c check_minus
+            prog1a.s:48     .text:000000000000007c update_cnt
+            prog1a.s:54     .text:0000000000000094 check_down
+            prog1a.s:59     .text:00000000000000a4 dowf
+            prog1a.s:64     .text:00000000000000b8 enddw
+            prog1a.s:73     .text:00000000000000d4 wait_loop
+            prog1a.s:79     .text:00000000000000e8 endwait
+
+NO UNDEFINED SYMBOLS
