@@ -1,0 +1,69 @@
+Mar 14 09:10:28.635 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 14 09:10:28.635 HYPERVISOR: Started on IP = localhost, TCP port = 63040.
+Mar 14 09:10:29.120 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 14 09:10:29.122 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips 
+Mar 14 09:10:29.123 GENERAL: working_dir=C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips
+Mar 14 09:10:29.123 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips\13582872-3ffd-4ccf-95fc-ce0fb7bbc95d 
+Mar 14 09:10:29.126 GENERAL: working_dir=C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips\13582872-3ffd-4ccf-95fc-ce0fb7bbc95d
+Mar 14 09:10:29.126 HYPERVISOR: exec_cmd: vm create R5 5 c7200 
+Mar 14 09:10:29.129 VM: VM R5 created.
+Mar 14 09:10:29.130 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5007 
+Mar 14 09:10:29.130 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
+Mar 14 09:10:29.130 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:10:29.130 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
+Mar 14 09:10:29.132 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Mar 14 09:10:29.132 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Mar 14 09:10:29.133 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:10:29.133 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60609bc4 
+Mar 14 09:10:29.135 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/Utilizador/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Mar 14 09:10:29.136 HYPERVISOR: exec_cmd: c7200 set_mac_addr R5 ca05.2894.0000 
+Mar 14 09:10:29.136 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
+Mar 14 09:10:29.137 HYPERVISOR: exec_cmd: vm set_ram R5 512 
+Mar 14 09:10:29.137 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:10:29.137 HYPERVISOR: exec_cmd: vm slot_remove_binding R5 0 0 
+Mar 14 09:10:29.139 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:10:29.139 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-2FE 
+Mar 14 09:10:29.139 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:10:29.139 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 PA-2FE-TX 
+Mar 14 09:10:29.139 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:10:29.140 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 PA-2FE-TX 
+Mar 14 09:10:32.392 HYPERVISOR: exec_cmd: nio create_udp udp-87e37995-83cf-4d71-8c0a-69879814688b 20038 127.0.0.1 20039 
+Mar 14 09:10:32.645 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-87e37995-83cf-4d71-8c0a-69879814688b 
+Mar 14 09:10:32.645 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:10:33.535 HYPERVISOR: exec_cmd: nio create_udp udp-e925678f-a9c6-41e6-b1b1-24d55257c8de 20050 127.0.0.1 20051 
+Mar 14 09:10:33.537 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-e925678f-a9c6-41e6-b1b1-24d55257c8de 
+Mar 14 09:10:33.538 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:10:33.587 HYPERVISOR: exec_cmd: nio create_udp udp-40a0299a-e5af-4d30-a156-748ab4f7317f 20054 127.0.0.1 20055 
+Mar 14 09:10:33.590 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-40a0299a-e5af-4d30-a156-748ab4f7317f 
+Mar 14 09:10:33.591 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:10:33.662 HYPERVISOR: exec_cmd: nio create_udp udp-58bd8ec0-78f1-4a25-82d1-02c8ddae0981 20058 127.0.0.1 20059 
+Mar 14 09:10:33.665 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 1 udp-58bd8ec0-78f1-4a25-82d1-02c8ddae0981 
+Mar 14 09:10:33.666 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:13:08.368 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Mar 14 09:13:08.378 HYPERVISOR: exec_cmd: vm set_ghost_file R5 C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Mar 14 09:13:08.379 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:13:08.388 HYPERVISOR: exec_cmd: vm set_config R5 configs\i5_startup-config.cfg configs\i5_private-config.cfg 
+Mar 14 09:13:08.391 HYPERVISOR: exec_cmd: vm start R5 
+Mar 14 09:13:38.757 HYPERVISOR: exec_cmd: vm extract_config R5 
+Mar 14 09:16:08.798 HYPERVISOR: exec_cmd: vm extract_config R5 
+Mar 14 09:50:09.782 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:50:09.782 HYPERVISOR: exec_cmd: vm stop R5 
+Mar 14 09:50:09.986 VM: VM R5 shutdown.
+Mar 14 09:50:09.988 HYPERVISOR: exec_cmd: vm extract_config R5 
+Mar 14 09:50:12.522 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Mar 14 09:50:12.523 HYPERVISOR: exec_cmd: vm set_ghost_file R5 C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Mar 14 09:50:12.523 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 09:50:12.535 HYPERVISOR: exec_cmd: vm set_config R5 configs\i5_startup-config.cfg configs\i5_private-config.cfg 
+Mar 14 09:50:12.535 HYPERVISOR: exec_cmd: vm start R5 
+Mar 14 10:04:13.178 HYPERVISOR: exec_cmd: vm extract_config R5 
+Mar 14 10:54:02.095 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 10:54:02.097 HYPERVISOR: exec_cmd: vm stop R5 
+Mar 14 10:54:02.449 VM: VM R5 shutdown.
+Mar 14 10:54:02.458 HYPERVISOR: exec_cmd: vm extract_config R5 
+Mar 14 10:54:03.476 HYPERVISOR: exec_cmd: vm get_status R5 
+Mar 14 10:54:03.478 HYPERVISOR: exec_cmd: vm extract_config R5 
+Mar 14 10:54:03.486 HYPERVISOR: exec_cmd: vm delete R5 
+Mar 14 10:54:03.486 VM: VM R5 destroyed.
+Mar 14 10:54:03.495 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 14 10:54:03.807 HYPERVISOR: Stopped.
+Mar 14 10:54:03.807 GENERAL: reset done.
