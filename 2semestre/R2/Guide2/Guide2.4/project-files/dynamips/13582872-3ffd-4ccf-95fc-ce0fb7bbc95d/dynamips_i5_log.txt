@@ -1,0 +1,66 @@
+Mar 14 09:10:28.040 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 14 09:10:28.041 HYPERVISOR: Started on IP = localhost, TCP port = 63037.
+Mar 14 09:10:28.543 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 14 09:10:28.545 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips 
+Mar 14 09:10:28.545 GENERAL: working_dir=C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips
+Mar 14 09:10:28.546 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips\fd352132-2689-4ba9-b921-5c2eb37cbe87 
+Mar 14 09:10:28.554 GENERAL: working_dir=C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips\fd352132-2689-4ba9-b921-5c2eb37cbe87
+Mar 14 09:10:28.556 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Mar 14 09:10:28.558 VM: VM R4 created.
+Mar 14 09:10:28.559 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5006 
+Mar 14 09:10:28.559 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Mar 14 09:10:28.559 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:10:28.560 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Mar 14 09:10:28.561 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Mar 14 09:10:28.561 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Mar 14 09:10:28.562 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:10:28.563 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60609bc4 
+Mar 14 09:10:28.564 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Utilizador/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Mar 14 09:10:28.564 HYPERVISOR: exec_cmd: c7200 set_mac_addr R4 ca04.534c.0000 
+Mar 14 09:10:28.565 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Mar 14 09:10:28.565 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Mar 14 09:10:28.566 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:10:28.567 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Mar 14 09:10:28.567 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:10:28.568 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-2FE 
+Mar 14 09:10:28.568 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:10:28.569 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-2FE-TX 
+Mar 14 09:10:28.569 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:10:28.570 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-2FE-TX 
+Mar 14 09:10:31.984 HYPERVISOR: exec_cmd: nio create_udp udp-9685c9de-1f01-45a4-816b-f9fbffabee80 20020 127.0.0.1 20021 
+Mar 14 09:10:32.251 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-9685c9de-1f01-45a4-816b-f9fbffabee80 
+Mar 14 09:10:32.252 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:10:32.335 HYPERVISOR: exec_cmd: nio create_udp udp-3ffd5f0a-c5b3-424c-8a81-e2844dad13de 20030 127.0.0.1 20031 
+Mar 14 09:10:32.337 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-3ffd5f0a-c5b3-424c-8a81-e2844dad13de 
+Mar 14 09:10:32.338 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:10:32.692 HYPERVISOR: exec_cmd: nio create_udp udp-bcdcc4b9-1d5d-410c-bf57-4c217d569960 20042 127.0.0.1 20043 
+Mar 14 09:10:32.694 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-bcdcc4b9-1d5d-410c-bf57-4c217d569960 
+Mar 14 09:10:32.696 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:13:08.365 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Mar 14 09:13:08.366 HYPERVISOR: exec_cmd: vm set_ghost_file R4 C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Mar 14 09:13:08.367 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:13:08.377 HYPERVISOR: exec_cmd: vm set_config R4 configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Mar 14 09:13:08.378 HYPERVISOR: exec_cmd: vm start R4 
+Mar 14 09:13:38.714 HYPERVISOR: exec_cmd: vm extract_config R4 
+Mar 14 09:15:38.761 HYPERVISOR: exec_cmd: vm extract_config R4 
+Mar 14 09:50:09.735 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:50:09.735 HYPERVISOR: exec_cmd: vm stop R4 
+Mar 14 09:50:09.893 VM: VM R4 shutdown.
+Mar 14 09:50:09.895 HYPERVISOR: exec_cmd: vm extract_config R4 
+Mar 14 09:50:12.478 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Mar 14 09:50:12.478 HYPERVISOR: exec_cmd: vm set_ghost_file R4 C:\Users\Utilizador\Desktop\LECI_2ano\2semestre\R2\Guide2\Guide2.3\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Mar 14 09:50:12.479 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 09:50:12.489 HYPERVISOR: exec_cmd: vm set_config R4 configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Mar 14 09:50:12.489 HYPERVISOR: exec_cmd: vm start R4 
+Mar 14 10:03:43.173 HYPERVISOR: exec_cmd: vm extract_config R4 
+Mar 14 10:54:02.092 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 10:54:02.094 HYPERVISOR: exec_cmd: vm stop R4 
+Mar 14 10:54:02.423 VM: VM R4 shutdown.
+Mar 14 10:54:02.427 HYPERVISOR: exec_cmd: vm extract_config R4 
+Mar 14 10:54:03.362 HYPERVISOR: exec_cmd: vm get_status R4 
+Mar 14 10:54:03.365 HYPERVISOR: exec_cmd: vm extract_config R4 
+Mar 14 10:54:03.374 HYPERVISOR: exec_cmd: vm delete R4 
+Mar 14 10:54:03.374 VM: VM R4 destroyed.
+Mar 14 10:54:03.378 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 14 10:54:03.855 HYPERVISOR: Stopped.
+Mar 14 10:54:03.855 GENERAL: reset done.
