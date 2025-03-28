@@ -13,7 +13,7 @@ int main(void) {
 
     while(1) {
         segment = 1;
-        for(i = 0; i < 7; i++) {
+        for(int i = 0; i < 7; i++) {
 
             LATB = (LATB & 0x80FF) | segment << 8;
 
