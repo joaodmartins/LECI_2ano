@@ -45,7 +45,6 @@ int main(void)
             setDutyCycle(55);
         }
         delay(360);
-        IFS0bits.T3IF = 0;
     }
     return 0;
 }

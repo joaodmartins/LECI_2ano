@@ -24,6 +24,8 @@ int main(void) {
     // define RX interrupt mode (URXISEL bits)
     U2STAbits.URXISEL = 0;  // has 1 character
 
+
+
     EnableInterrupts();
 
     count = 0;
